@@ -5,8 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Airtel {
     private AirtelService airtelService;
-    @Autowired
-    @Qualifier("airtelDataService")
+
     public void setAirtelService( AirtelService airtelService) {
         this.airtelService = airtelService;
     }
